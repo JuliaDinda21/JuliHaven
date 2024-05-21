@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" href="img/Logo6(192).png">
+    <meta name="theme-color" content="#00C2CB"/>
+    <title>PJBL</title>
+    <link rel="manifest" href="./app.webmanifest">
+    <link rel="icon" href="img/Logo3(128).png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,300;1,700&display=swap" />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Alpine JS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <!-- APP js -->
+    <script src="src/app.js"></script>
+  </head>
+
+  <body>
+    <header>
+    <!-- Navbar Start -->
+    <nav class="navbar" x-data>
+      <a href="#" class="navbar-logo"><img class="nav-bar-logo" src="img/Logo2(96).png" alt="Yoomy logo image" width="80px" height="80px"></a>
+      <div class="navbar-nav">
+        <div class="navbar-border">
+          <a href="#home">Home</a>
+          <a href="#catalogue">Catalogue</a>
+          <a href="#favorite">Favorite</a>
+          <a href="#aboutus">About Us</a>
+        </div>
+      </div>
+      <div class="navbar-extra">
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+  </nav>
+</header>
+    </div>
+
+      <!-- Search Form Start -->
+      <!-- <div class="search-form">
+        <input type="search" id="search-box" placeholder="Search here..." />
+        <label for="search-box"><i data-feather="search"></i></label>
+      </div> -->
+      <!-- Search Form End -->
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Section start -->
+    <section id="home" class="hero">
+      <main class="content">
+        <h1>An Online Restaurant Guide That Helps You Find The Best Food and Place to Eat</h1>
+        <a href="#" class="cta">Let's FInd Out</a> 
+      </main>
+    </section>
+
+    <!-- Hero Section end -->
+
+    <!-- About Section start -->
+    <section id="catalogue" class="catalogue">
+      <h2><span>Tentang </span>Kami</h2>
+      <div class="row">
+        <div class="about-img">
+          <img src="img/blue-bg.jpg" alt="About" width="300" height="400" />
+        </div>
+        <div class="content">
+          <h3>Kenapa Memilih Produk Kami?</h3>
+          <p>JulyHaven menjadi pilihan utama karena menawarkan buah-buahan premium dan jus segar berkualitas terbaik.</p>
+          <p> Kami mengutamakan kelezatan, kesehatan, dan kesegaran dalam setiap produk kami. Jadikan setiap momen spesial dengan kelezatan dari JulyHaven!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section end -->
+
+    <!-- Menu Section Start -->
+    <section id="menu" class="menu">
+      <h2><span>Menu </span>Kami</h2>
+      <p> Selamat datang di JulyHaven! Temukan kelezatan baru dengan segarnya jus buah kami. Selamat menikmati pengalaman
+        rasa yang istimewa!</p>
+  
+      <div class="row">
+        <div class="row-menu">
+          <div class="menu-card" onclick="document.getElementById('id01').style.display='block'"
+            class="menu-img">
+            <img src="img/alpukat.jpg" alt="Avocado Juice" />
+            <h3 class="menu-card-tittle">Avocado Juice</h3>
+            <div class="menu-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+            </div>
+            <p class="menu-card-price">IDR 15K <span>IDR 23K </span></p>
+          </div>
+        </div>
+  
+        <div class="row-menu">
+          <div class="menu-card" onclick="document.getElementById('id02').style.display='block'"
+            class="menu-img">
+            <img src="img/berry.jpg" alt="Berry Juice" />
+            <h3 class="menu-card-tittle">Berry Juice</h3>
+            <div class="menu-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star"></i>
+            </div>
+            <p class="menu-card-price">IDR 18K <span>IDR 28K </span></p>
+          </div>
+        </div>
+  
+        <div class="row-menu">
+          <div class="menu-card" onclick="document.getElementById('id03').style.display='block'"
+            class="menu-img">
+            <img src="img/strawberry.jpg" alt="Strawberry Juice" />
+            <h3 class="menu-card-tittle">Strawberry Juice</h3>
+            <div class="menu-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+            </div>
+            <p class="menu-card-price">IDR 18K <span>IDR 28K </span></p>
+          </div>
+        </div>
+  
+        <div class="row-menu">
+          <div class="menu-card" onclick="document.getElementById('id04').style.display='block'"
+            class="menu-img">
+            <img src="img/pisang.jpg" alt="Banana Juice" />
+            <h3 class="menu-card-tittle">Banana Juice</h3>
+            <div class="menu-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star"></i>
+            </div>
+            <p class="menu-card-price">IDR 12K <span>IDR 20K </span></p>
+          </div>
+        </div>
+  
+        <div class="row-menu">
+          <div class="menu-card" onclick="document.getElementById('id05').style.display='block'"
+            class="menu-img">
+            <img src="img/kiwi.jpg" alt="Kiwi Juice" />
+            <h3 class="menu-card-tittle">Kiwi Juice</h3>
+            <div class="menu-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star"></i>
+            </div>
+            <p class="menu-card-price">IDR 15K <span>IDR 22K </span></p>
+          </div>
+        </div>
+  
+        <div class="row-menu">
+          <div class="menu-card" onclick="document.getElementById('id06').style.display='block'"
+            class="menu-img">
+            <img src="img/jambu.jpg" alt="Guava Juice" />
+            <h3 class="menu-card-tittle">Guava Juice</h3>
+            <div class="menu-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star"></i>
+            </div>
+            <p class="menu-card-price">IDR 12K <span>IDR 18K </span></p>
+          </div>
+        </div>
+  
+        <div class="row-menu">
+          <div class="menu-card" onclick="document.getElementById('id07').style.display='block'"
+            class="menu-img">
+            <img src="img/naga.jpg" alt="Dragon Fruit Juice" />
+            <h3 class="menu-card-tittle">Dragon Fruit Juice</h3>
+            <div class="menu-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+            </div>
+            <p class="menu-card-price">IDR 18K <span>IDR 23K </span></p>
+          </div>
+        </div>
+  
+        <div class="row-menu">
+          <div class="menu-card" onclick="document.getElementById('id08').style.display='block'"
+            class="menu-img">
+            <img src="img/mangga.jpg" alt="Mango Juice" />
+            <h3 class="menu-card-tittle">Mango Juice</h3>
+            <div class="menu-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+            </div>
+            <p class="menu-card-price">IDR 15K <span>IDR 22K </span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Modal Menu Start -->
+    <div id="id01" class="modal">
+      <div class="modal-content">
+        <header class="modal-header">
+          <span onclick="document.getElementById('id01').style.display='none'"
+            class="close">&times;</span>
+          <h2>Avocado Juice</h2>
+        </header>
+        <div class="modal-img"><img src="img/alpukat.jpg" height="40%" width="50%" alt=" " /></div>
+        <div class="modal-body">
+          <p>Nikmati Avocado Juice di JulyHaven dengan diskon 20%! Paduan buah alpukat segar dan keharuman istimewa, semakin terjangkau. Jangan lewatkan penawaran spesial ini!</p>
+        </div>
+      </div>
+    </div>
+  
+    <div id="id02" class="modal">
+      <div class="modal-content">
+        <header class="modal-header">
+          <span onclick="document.getElementById('id02').style.display='none'"
+            class="close">&times;</span>
+          <h2>Berry Juice</h2>
+        </header>
+        <div class="modal-img"><img src="img/berry.jpg" height="40%" width="50%" alt=" " /></div>
+        <div class="modal-body">
+          <p>Nikmati Berry Juice di JulyHaven dengan diskon 20%! Paduan buah berry segar dan keharuman istimewa, semakin terjangkau. Jangan lewatkan penawaran spesial ini!</p>
+        </div>
+      </div>
+    </div>
+  
+    <div id="id03" class="modal">
+      <div class="modal-content">
+        <header class="modal-header">
+          <span onclick="document.getElementById('id03').style.display='none'"
+            class="close">&times;</span>
+          <h2>Strawberry Juice</h2>
+        </header>
+        <div class="modal-img"><img src="img/strawberry.jpg" height="40%" width="50%" alt=" " /></div>
+        <div class="modal-body">
+          <p>Nikmati Strawberry Juice di JulyHaven dengan diskon 20%! Paduan buah strawberry segar dan keharuman istimewa, semakin terjangkau. Jangan lewatkan penawaran spesial ini!</p>
+        </div>
+      </div>
+    </div>
+  
+    <div id="id04" class="modal">
+      <div class="modal-content">
+        <header class="modal-header">
+          <span onclick="document.getElementById('id04').style.display='none'"
+            class="close">&times;</span>
+          <h2>Banana Juice</h2>
+        </header>
+        <div class="modal-img"><img src="img/pisang.jpg" height="40%" width="50%" alt=" " /></div>
+        <div class="modal-body">
+          <p>Nikmati Banana Juice di JulyHaven dengan diskon 20%! Paduan buah pisang segar dan keharuman istimewa, semakin terjangkau. Jangan lewatkan penawaran spesial ini!</p>
+        </div>
+      </div>
+    </div>
+  
+    <div id="id05" class="modal">
+      <div class="modal-content">
+        <header class="modal-header">
+          <span onclick="document.getElementById('id05').style.display='none'"
+            class="close">&times;</span>
+          <h2>Kiwi Juice</h2>
+        </header>
+        <div class="modal-img"><img src="img/kiwi.jpg" height="40%" width="50%" alt=" " /></div>
+        <div class="modal-body">
+          <p>Nikmati Kiwi Juice di JulyHaven dengan diskon 20%! Paduan buah kiwi segar dan keharuman istimewa, semakin terjangkau. Jangan lewatkan penawaran spesial ini!</p>
+        </div>
+      </div>
+    </div>
+  
+    <div id="id06" class="modal">
+      <div class="modal-content">
+        <header class="modal-header">
+          <span onclick="document.getElementById('id06').style.display='none'"
+            class="close">&times;</span>
+          <h2>Guava Juice</h2>
+        </header>
+        <div class="modal-img"><img src="img/jambu.jpg" height="40%" width="50%" alt=" " /></div>
+        <div class="modal-body">
+          <p>Nikmati Guava Juice di JulyHaven dengan diskon 20%! Paduan buah jambu biji segar dan keharuman istimewa, semakin terjangkau. Jangan lewatkan penawaran spesial ini!</p>
+        </div>
+      </div>
+    </div>
+  
+    <div id="id07" class="modal">
+      <div class="modal-content">
+        <header class="modal-header">
+          <span onclick="document.getElementById('id07').style.display='none'"
+            class="close">&times;</span>
+          <h2>Dragon Fruit Juice</h2>
+        </header>
+        <div class="modal-img"><img src="img/naga.jpg" height="40%" width="50%" alt=" " /></div>
+        <div class="modal-body">
+          <p>Nikmati Dragon Fruit Juice di JulyHaven dengan diskon 20%! Paduan buah naga segar dan keharuman istimewa, semakin terjangkau. Jangan lewatkan penawaran spesial ini!</p>
+        </div>
+      </div>
+    </div>
+  
+    <div id="id08" class="modal">
+      <div class="modal-content">
+        <header class="modal-header">
+          <span onclick="document.getElementById('id08').style.display='none'"
+            class="close">&times;</span>
+          <h2>Mango Juice</h2>
+        </header>
+        <div class="modal-img"><img src="img/mangga.jpg" height="40%" width="50%" alt=" " /></div>
+        <div class="modal-body">
+          <p>Nikmati Mango Juice di JulyHaven dengan diskon 20%! Paduan buah mangga segar dan keharuman istimewa, semakin terjangkau. Jangan lewatkan penawaran spesial ini!</p>
+        </div>
+      </div>
+    </div>
+    <!-- Menu Section End -->
+    <!-- Modal Menu End -->
+
+    <!-- Products Section start -->
+    <section class="products" id="products" x-data="products">
+      <h2><span>Produk Unggulan</span> Kami</h2>
+      <p>Pilih buah kering premium kami untuk sensasi lezat, dan rasakan kebahagiaan rasa dalam setiap teguk jus buah segar kami. Selamat menemukan kenikmatan!</p>
+
+      <div class="row">
+        <template x-for="(item, index) in items" x-key="index">
+          <div class="product-card">
+            <div class="product-icons">
+              <a href="#" @click.prevent="$store.cart.add(item)">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <use href="img/feather-sprite.svg#shopping-cart" />
+                </svg>
+              </a>
+              <a href="#" class="item-detail-button">
+                <svg width="24" height="24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <use href="img/feather-sprite.svg#heart" />
+                </svg>
+              </a>
+            </div>
+            <div class="product-image">
+              <img :src="`img/${item.img}`" :alt="item.name" />
+            </div>
+            <div class="product-content">
+              <h3 x-text="item.name"></h3>
+              <div class="product-stars">
+                <svg width="24" height="24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <use href="img/feather-sprite.svg#star" />
+                </svg>
+                <svg width="24" height="24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <use href="img/feather-sprite.svg#star" />
+                </svg>
+                <svg width="24" height="24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <use href="img/feather-sprite.svg#star" />
+                </svg>
+                <svg width="24" height="24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <use href="img/feather-sprite.svg#star" />
+                </svg>
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <use href="img/feather-sprite.svg#star" />
+                </svg>
+              </div>
+              <div class="product-card-price">
+                <span x-text="rupiah(item.price)"></span>
+              </div>
+            </div>
+          </div>
+        </template>
+      </div>
+    </section>
+    <!-- Products Section end -->
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="contact">
+      <h2><span>Kontak </span>Kami</h2>
+      <p>Kami senantiasa siap mendengar Anda! Hubungi kami untuk pertanyaan, pesanan, atau saran. Terima kasih atas dukungan Anda untuk JulyHaven!</p>
+
+      <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0546365078158!2d106.7861125!3d-6.256533099999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f10905a4f9fb%3A0x4e9dabbde089ce41!2sWarung%20Amel!5e0!3m2!1sid!2sid!4v1698212653956!5m2!1sid!2sid" width="350" height="300" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+          <form id="myButton" onsubmit="emailSend(); reset(); return false;">
+          <div class="input-group">
+            <i data-feather="user"></i>
+              <input type="text" placeholder="Name" id="name" required/>
+            </div>
+            <div class="input-group">
+              <i data-feather="mail"></i>
+              <input type="text" placeholder="Email" id="email"required/>
+            </div>
+            <div class="input-group">
+              <i data-feather="phone"></i>
+              <input type="text" placeholder="Phone" id="phone"required/>
+            </div>
+            <button type="submit" class="btn" id="myButton">Submit</button>
+          </form>
+        </div> 
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js">
+      </script>
+        <script src="script.js"></script>
+      </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Start-->
+    <footer>
+      <div class="socials">
+        <a href="https://instagram.com/juliadinda217?igshid=MzMyNGUyNmU2YQ=="
+          ><i data-feather="instagram"></i
+        ></a>
+        <a href="https://x.com/Juliadinda217?t=5m2S2PqvPTgx79JGfEr9YA&s=09"
+          ><i data-feather="twitter"></i
+        ></a>
+        <a href="https://youtube.com/@juliadinda21?si=Copu-5QQ-3tm7cjT"
+          ><i data-feather="youtube"></i
+        ></a>
+      </div>
+      <div class="credit">
+        <p>Created by <a href="">JuliaDindaLestari</a> | &copy: 2023</p>
+      </div>
+    </footer>
+
+    <!-- Footer End -->
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- My Javascript-->
+    <script src="script.js"></script>
+  </body>
+</html>
